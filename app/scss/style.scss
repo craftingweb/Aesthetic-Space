@@ -1,5 +1,21 @@
 @import "reset";
 
+@font-face {
+  font-family: "Inter";
+  src: url("Inter_18pt-Regular.woff2") format("woff2"),
+    url("Inter_18pt-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("Inter_18pt-Bold.woff2") format("woff2"),
+    url("Inter_18pt-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -28,4 +44,73 @@ button {
 
 body {
   background-color: #000;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.2;
 }
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 9px 10px;
+}
+
+.btn {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 18px 65px;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.header {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__btn {
+    margin-left: auto;
+    margin-right: 150px;
+  }
+}
+
+.footer {
+  margin-bottom: 100px;
+  font-weight: 700;
+  &__inner {
+    padding: 50px 50px 20px;
+    background-color: #8f7e70;
+    border-radius: 30px;
+  }
+  &__title {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  &__contact {
+    display: flex;
+    font-size: 20px;
+    line-height: 130%;
+    flex-wrap: wrap;
+    &-item {
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    width: 50%;
+  }
+}
+
+@import "media";
