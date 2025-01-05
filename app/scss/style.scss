@@ -212,4 +212,29 @@ body {
   }
 }
 
+.stats {
+  margin-bottom: 50px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__item {
+    background-color: #b5a395;
+    border-radius: 30px;
+    padding: 16px 40px;
+    text-align: center;
+    flex-basis: 33.333333%;
+  }
+  &__num {
+    font-size: 96px;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
 @import "media";
