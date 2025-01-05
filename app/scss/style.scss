@@ -139,6 +139,7 @@ body {
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    border-radius: 30px;
   }
   &__promo {
     grid-column: 1/2;
