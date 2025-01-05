@@ -1,7 +1,38 @@
-@media (max-width: 1200px) {
+@media (max-width: 1240px) {
   .header {
     &__btn {
       margin-right: auto;
+    }
+  }
+  .top {
+    &__inner {
+      grid-template-rows: 220px 390px;
+    }
+    &__tagline {
+      &-img {
+        max-width: 80%;
+      }
+      &-title {
+        font-size: 52px;
+      }
+    }
+    &__promo {
+      background-position: bottom;
+      padding-top: 106px;
+      &-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      &-text {
+        margin-bottom: 10px;
+      }
+      &-btn {
+        margin-bottom: 20px;
+      }
+      &-img {
+        margin-bottom: 10px;
+        max-width: 70%;
+      }
     }
   }
 }
