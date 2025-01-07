@@ -292,6 +292,7 @@ body {
   }
   &__slider {
     margin-top: -150px;
+    padding-bottom: 5px;
   }
   &__slide {
     &-title {
@@ -355,6 +356,28 @@ body {
       }
     }
   }
+}
+
+.project-slider-btn {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  background-color: #8f7e70;
+  width: 68px;
+  height: 40px;
+  border-radius: 30px;
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-button-prev {
+  right: 552px;
+  left: auto;
+}
+.swiper-button-next {
+  right: 0;
+  transform: rotate(2deg);
 }
 
 @import "media";
