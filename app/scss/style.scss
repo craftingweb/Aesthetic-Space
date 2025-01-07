@@ -239,7 +239,6 @@ body {
 }
 
 .about {
-  margin-bottom: 100px;
   &__wrapper {
     position: relative;
     padding-bottom: 137px;
@@ -274,6 +273,87 @@ body {
   }
   &__text {
     max-width: 952px;
+  }
+}
+
+.projects {
+  margin-bottom: 80px;
+  margin-top: -70px;
+  &__inner {
+    background-image: url("/images/projects-bg.webp");
+    background-repeat: no-repeat;
+    padding: 160px 85px 0 50px;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+  &__slider {
+    margin-top: -150px;
+  }
+  &__slide {
+    &-title {
+      text-align: right;
+      font-size: 40px;
+      font-weight: 700;
+      max-width: 441px;
+      margin-left: auto;
+      margin-right: 115px;
+      margin-bottom: 50px;
+    }
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 56px;
+    }
+    &-content {
+    }
+    &-subtitle {
+      font-weight: 700;
+      margin-bottom: 15px;
+      max-width: 318px;
+    }
+    &-text {
+      max-width: 318px;
+    }
+    &-info {
+      display: flex;
+      gap: 10px;
+      align-items: flex-end;
+      margin-top: -15px;
+      li {
+        width: 120px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3c342e;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        &:last-child {
+          background-image: url("/images/list-bg.webp");
+          background-color: transparent;
+          height: 130px;
+          background-repeat: no-repeat;
+          background-position: bottom;
+          span {
+            position: absolute;
+            bottom: 18px;
+          }
+        }
+        sup {
+          font-size: 12px;
+          margin-top: -5px;
+        }
+      }
+    }
   }
 }
 
