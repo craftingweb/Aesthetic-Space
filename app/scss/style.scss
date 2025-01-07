@@ -380,4 +380,53 @@ body {
   transform: rotate(2deg);
 }
 
+.price {
+  margin-bottom: 80px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__item {
+    width: 50%;
+  }
+  &__list {
+    background-color: #8f7e70;
+    min-height: 360px;
+    border-radius: 30px;
+    list-style: disc;
+    margin-bottom: 20px;
+    padding: 55px 20px 44px;
+    &-item {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 130%;
+      max-width: 416px;
+      margin-left: 90px;
+    }
+  }
+  &__title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background-color: #3c342e;
+    border-radius: 30px;
+    text-align: center;
+    padding: 26px 0;
+  }
+  &__size {
+    color: #fff;
+    background-color: #3c342e;
+    display: inline-block;
+    padding: 19px;
+    width: 210px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercas;
+    text-align: center;
+  }
+}
+
 @import "media";
