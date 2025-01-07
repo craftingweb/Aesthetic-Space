@@ -124,6 +124,45 @@
     &__slider {
       margin-top: 0;
     }
+    &__slide {
+      &-inner {
+        flex-wrap: wrap;
+      }
+      &-images {
+        max-width: 100%;
+        width: 100%;
+      }
+      &-text {
+        max-width: 100%;
+      }
+      &-info {
+        margin-top: -2px;
+        justify-content: right;
+      }
+    }
+  }
+
+  .projects .swiper-button-next {
+    right: 19px;
+  }
+  .swiper-button-prev {
+    right: auto;
+    left: 24px;
+  }
+  .project-slider-btn {
+    bottom: 9px;
+  }
+  .price {
+    &__inner {
+      display: block;
+    }
+    &__item {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    &__list {
+      min-height: auto;
+    }
   }
 }
 
@@ -254,6 +293,61 @@
     }
     &__item {
       flex-basis: 100%;
+    }
+  }
+  .about {
+    &__inner {
+      padding: 50px 10px 20px;
+    }
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  .projects {
+    &__inner {
+      padding: 50px 10px 20px;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__slide {
+      &-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+        margin-right: 0;
+      }
+      &-inner {
+        gap: 25px;
+      }
+      &-text {
+        margin-bottom: 20px;
+      }
+      &-info {
+        flex-wrap: wrap;
+        justify-content: center;
+        li {
+          width: 40%;
+          &:last-child {
+            background-size: cover;
+            height: 153px;
+          }
+        }
+      }
+    }
+  }
+  .project-slider-btn {
+    bottom: 0px;
+  }
+  .price {
+    &__info {
+      text-align: center;
+    }
+    &__item {
+      margin-bottom: 70px;
     }
   }
 }
